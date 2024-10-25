@@ -1,0 +1,13 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "nlp/main.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "nlp/main.py" }
+    ]
+  }
+  
